@@ -18,6 +18,7 @@ if (!file.exists(filename)) {
 
 header <- read.table(filename, nrows = 1, header = FALSE, sep = ";", stringsAsFactors = FALSE)
 
+# only read data for the dates 2007-02-01 and 2007-02-02
 dat <- read.table(filename, sep = ";", header=TRUE, na.strings="?", 
 skip = 66636, nrows = 2880)
 
